@@ -1,0 +1,270 @@
+{
+  "allowPreview" : true,
+  "assetSharingUrl" : "https://nagkosanam306-dev-ed.my.salesforce.com/analytics/wave/dashboard?assetId=0FK7F000000QybAWAS&orgId=00D7F000002Croa&loginHost=ap5.salesforce.com&urlType=sharing",
+  "createdBy" : {
+    "id" : "0057F000000L7svQAC",
+    "name" : "Nag Kosanam",
+    "profilePhotoUrl" : "https://nagkosanam306-dev-ed--c.ap5.content.force.com/profilephoto/005/T"
+  },
+  "createdDate" : "2017-11-28T10:02:15.000Z",
+  "datasets" : [ {
+    "id" : "0Fb7F0000000axPSAQ",
+    "label" : "la_zip_codes",
+    "name" : "la_zip_codes",
+    "url" : "/services/data/v41.0/wave/datasets/0Fb7F0000000axPSAQ"
+  } ],
+  "files" : [ {
+    "contentType" : "image/png",
+    "fileLength" : 16672,
+    "fileName" : "assetPreviewThumb",
+    "id" : "0FJ7F0000004IgcWAE",
+    "lastModifiedDate" : "2017-11-28T10:18:40.000Z",
+    "url" : "/services/data/v41.0/wave/lenses/0FK7F000000QybAWAS/files/0FJ7F0000004IgcWAE"
+  } ],
+  "folder" : {
+    "id" : "0057F000000L7svQAC"
+  },
+  "id" : "0FK7F000000QybAWAS",
+  "label" : "Los Angeles Tax Data by Zip Code",
+  "lastAccessedDate" : "2018-01-04T06:01:18.000Z",
+  "lastModifiedBy" : {
+    "id" : "0057F000000L7svQAC",
+    "name" : "Nag Kosanam",
+    "profilePhotoUrl" : "https://nagkosanam306-dev-ed--c.ap5.content.force.com/profilephoto/005/T"
+  },
+  "lastModifiedDate" : "2017-11-28T10:18:38.000Z",
+  "mobileDisabled" : false,
+  "name" : "es_Tax_Data_by_Zip_Code",
+  "permissions" : {
+    "manage" : true,
+    "modify" : true,
+    "view" : true
+  },
+  "refreshDate" : "2017-11-28T06:57:25.000Z",
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [ {
+      "name" : "Default",
+      "numColumns" : 12,
+      "pages" : [ {
+        "label" : "Untitled",
+        "name" : "7033b0aa-d1cf-47d6-b733-dce9323c31f8",
+        "widgets" : [ {
+          "colspan" : 12,
+          "column" : 0,
+          "name" : "chart_1",
+          "row" : 0,
+          "rowspan" : 9,
+          "widgetStyle" : {
+            "borderEdges" : [ ]
+          }
+        } ]
+      } ],
+      "rowHeight" : "normal",
+      "selectors" : [ ],
+      "style" : {
+        "alignmentX" : "left",
+        "alignmentY" : "top",
+        "backgroundColor" : "#F2F6FA",
+        "cellSpacingX" : 8,
+        "cellSpacingY" : 8,
+        "fit" : "original",
+        "gutterColor" : "#C5D3E0"
+      },
+      "version" : 1.0
+    } ],
+    "layouts" : [ ],
+    "steps" : {
+      "Zipcode_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [ {
+          "id" : "0Fb7F0000000axPSAQ",
+          "label" : "la_zip_codes",
+          "name" : "la_zip_codes",
+          "url" : "/services/data/v41.0/wave/datasets/0Fb7F0000000axPSAQ"
+        } ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : "{&quot;measures&quot;:[[&quot;sum&quot;,&quot;TotalWages&quot;]],&quot;groups&quot;:[&quot;Zipcode&quot;]}",
+          "version" : -1.0
+        },
+        "receiveFacet" : true,
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "none",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [ 100, 100 ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            }
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#FFFFFF",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "chart_1" : {
+        "parameters" : {
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "autoZoom" : false,
+          "highColor" : "#1674D9",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "projectionType" : "equirectangular",
+          "lowColor" : "#C5DBF7",
+          "visualizationType" : "choropleth",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [ 100, 100 ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "theme" : "wave",
+          "step" : "Zipcode_1",
+          "map" : "Custom: Central L.A. Zipcodes"
+        },
+        "type" : "chart"
+      }
+    }
+  },
+  "type" : "dashboard",
+  "url" : "/services/data/v41.0/wave/dashboards/0FK7F000000QybAWAS"
+}
